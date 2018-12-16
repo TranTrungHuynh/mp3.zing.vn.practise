@@ -1,0 +1,30 @@
+.back-navigation{
+    background-color: #e4e4e4;
+}
+
+.nav-container .home-icon{
+    width: 25px;
+    height: 100%;
+    float: left;
+    display: block;
+    line-height: 41.6px;
+}
+
+.nav-container .nav{
+    list-style: none;
+    margin: 0;
+}
+.nav-container .nav li {
+    display: inline-block;
+}
+.nav-container .nav li a{
+    display: block;
+    text-decoration: none;
+    padding: 12px 15px;
+    color: black;
+    font-size: 15px;
+}
+.nav-container .nav li a:hover{
+    background-color: #FFF;
+    color: #a845de;
+}

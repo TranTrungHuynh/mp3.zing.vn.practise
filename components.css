@@ -1,0 +1,441 @@
+/* Left side */
+.left-side{
+    width: 650px;
+    float: left;
+}
+
+.slide{
+    margin-bottom: 15px;
+}
+.fake-slide-lg{
+    width: 650px;
+    height: 274px;
+    background-image: url(https://picsum.photos/650/274/?random);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 5px;
+}
+.fake-slide-sm{
+    display: flex;
+    justify-content: space-between;
+}
+.sub-fake-slide{
+    width: 124px;
+    height: 50px;
+    background-image: url(https://picsum.photos/124/50/?random);
+}
+
+.rank-item{
+    display: flex;
+    align-items: center;
+    height: 81px;
+    border-bottom: 1px solid #DDD;
+}
+.rank-item .rank{
+    font-size: 25px;
+    padding: 10px 15px 10px 0;
+}
+.image-singer{
+    width: 60px;
+    height: 60px;
+    background-image: url(https://picsum.photos/60/60/?random);
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.image-singer i{
+    transform: scale(0);
+    transition: all 0.8s;
+}
+.image-singer:hover i{
+    transform: scale(1);
+    transition: all 0.8s;
+}
+.image-singer:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.info{
+    flex-grow: 1;
+}
+.rank-item .song-title{
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.rank-item .song-title:hover,
+.rank-item .singer{
+    color: rgb(168, 69, 222);
+    cursor: pointer;
+}
+.rank-item .singer{
+    font-size: 12px;
+    color: #888;
+}
+.rank-item i {
+      margin: 0 5px;
+}
+.rank-item i.last-child{
+      margin-right: 30px;
+}
+.rank-item .view-count{
+    font-size: 16px;
+    color: #888;
+    padding: 10px 5px;
+}
+.last-rank-item{
+      border: none;
+}
+
+.tracking-page > h2{
+    text-transform: uppercase;
+    font-weight: 10;
+    margin-bottom: 0;
+    padding: 0;
+    color: rgb(230, 0, 0);
+}
+.tracking-page p{
+      margin-top: 0;
+      color: #888;
+      padding-left: 6px;
+}
+.image-card{
+    width: 150px;
+    height: 150px;
+    background-image: linear-gradient(0deg, rgba(0,75,136,0.54023105824361) 0%, rgba(130,81,23,0.5) 100%), url(https://picsum.photos/150/150/?random);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: auto;
+    color: darkturquoise;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.image-card i{
+    transform: scale(0);
+    transition: all 0.8s;
+}
+.image-card:hover i{
+    transform: scale(1);
+    transition: all 0.8s;
+}
+.image-card:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.card > p{
+    margin-top: 5px;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.card > p:hover{
+    color: rgb(168, 69, 222);
+    cursor: pointer;
+}
+.card{
+    width: 25%;
+    height: 220px;
+    float: left;
+}
+.tracking-page::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* Video hot */
+.video-hot > h2,
+.album-hot > h2,
+.song-left > h2,
+.song-right > h2{
+    text-transform: uppercase;
+    font-weight: 10;
+    padding: 0;
+    color: rgb(230, 0, 0);
+    display: block;
+    float: left;
+    margin: 0 15px 0 0;
+}
+.video-hot > i,
+.album-hot > i,
+.song-left > i,
+.song-right > i{
+    font-size: 25px;
+    color: rgb(230, 0, 0);
+    margin-bottom: 15px;
+    display: block;
+}
+.video-hot i::after,
+.album-hot i::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.video-hot .card .singer,
+.album-hot .card .singer{
+    font-size: 12px;
+    color: #888;
+}
+.video-hot .singer:hover,
+.album-hot .singer:hover{
+    color: rgb(168, 69, 222);
+}
+.video-hot .card > p,
+.album-hot .card > p{
+    text-transform: capitalize;
+    padding-left: 6px;
+}
+
+/* Song hot - Song new */
+.song-left{
+    float: left;
+    width: 325px;
+}
+.song-right{
+    width: 325px;
+    float: left;
+    border-left: 1px solid #DDD;
+    padding-left: 6px;
+}
+.song-left .song-Vhot,
+.song-right .song-Vnew{
+    display: flex;
+    align-items: center;
+    width: 315px;
+    border-bottom: 1px solid #DDD;
+    margin: 0 6px;
+    padding: 5px 0;
+}
+.song-left .song-Vhot .image,
+.song-right .song-Vnew .image{
+    font-size: 20px;
+    margin: 0 10px 0 0;
+    width: 50px;
+    height: 50px;
+    background-image: url(https://picsum.photos/50/50/?random);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.song-left .song-Vhot .info,
+.song-right .song-Vnew .info{
+    flex-grow: 1;
+}
+.song-left .song-Vhot .song-title,
+.song-right .song-Vnew .song-title{
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.song-left .song-Vhot .song-title:hover,
+.song-right .song-Vnew .song-title:hover{
+    color: rgb(168, 69, 222);
+    cursor: pointer;
+}
+.song-left .song-Vhot .singer, 
+.song-right .song-Vnew .singer{
+    font-size: 12px;
+    color: #888;
+    text-transform: capitalize;
+}
+.song-left .song-Vhot .singer:hover, 
+.song-right .song-Vnew .singer:hover{
+    cursor: pointer;
+}
+
+/* Right side */
+.right-side .for-you{
+    background: radial-gradient(circle, rgba(198,108,2,0.5) 0%, rgba(130,81,23,0.1) 100%), url(https://picsum.photos/300/126/?random) ;
+    width: 300px;
+    height: 126px;
+    background-size: cover;
+    background-position: center;
+}
+.right-side h2{
+    text-transform: uppercase;
+    font-weight: 10;
+    color: rgb(230, 0, 0);
+    font-size: 18px;
+}
+.right-side .category{
+    width: 300px;
+    height: 90px;
+    background-image: linear-gradient(90deg, rgba(22, 44, 185, 0.697) 0%, rgba(56,42,42,0.5) 100%), url(https://picsum.photos/300/90/?random);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.right-side .category:hover,
+.right-side .for-you{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.right-side .category p{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(219, 212, 212);
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.right-side h2[class="chart"]{
+    display: block;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.right-side i{
+    display: inline-block;
+    margin-left: 15px;
+    color: rgb(230,0,0);
+    margin-bottom: 15px;
+}
+.right-side i::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.right-side .kind{
+    height: 42px;
+    width: 300px;
+    margin-bottom: 2px;
+}
+.right-side .kind .us-uk,
+.right-side .kind .k-pop{
+    background-color: rgb(236, 235, 235);
+}
+.right-side .kind .v-pop,
+.right-side .kind .us-uk,
+.right-side .kind .k-pop{
+    float: left;
+    width: 100px;
+    line-height: 41px;
+    text-align: center;
+    border-top: 2px solid rgb(184, 184, 184);
+    border-radius: 15px;
+}
+.right-side .kind .v-pop{
+    background-color: #FFF;
+    border-top: 2px solid purple;
+    border-left: 1px solid rgb(184, 184, 184);
+    border-right: 1px solid rgb(184, 184, 184);
+}
+.right-side .kind .us-uk:hover,
+.right-side .kind .k-pop:hover{
+    border-top: 2px solid purple;
+    cursor: pointer;
+}
+.right-side .kind .v-pop:hover{
+    cursor: pointer;
+}
+.right-side .top-one{
+    width: 300px;
+    height: 126px;
+    background-image: linear-gradient(0deg, rgba(22, 44, 185, 0.697) 0%, rgba(56,42,42,0.5) 100%), url(https://picsum.photos/300/126/?random);
+    position: relative;
+}
+.right-side .top-one .weekly-item{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    color: #FFF;
+    border: none;
+    padding: 0;
+}
+.weekly-item{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #DDD;
+    padding: 15px 0;
+}
+.weekly-item .rank{
+    font-size: 20px;
+    padding: 0px 10px;
+}
+.info{
+    flex-grow: 1;
+}
+.weekly-item .song-title{
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.weekly-item .song-title:hover,
+.weekly-item-mv .song-title-mv:hover,
+.weekly-item .singer:hover,
+.weekly-item-mv .singer-mv:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+.weekly-item .singer{
+    font-size: 12px;
+    color: #888;
+    text-transform: capitalize;
+}
+.weekly-item .view-count{
+    font-size: 13px;
+    color: #888;
+    padding: 10px 5px;
+}
+.right-side .weekly-item-last{
+    margin-bottom: 30px;
+}
+
+/* Tuần MV */
+.weekly-item-mv{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #DDD;
+    padding: 15px 0;
+}
+.weekly-item-mv .rank-mv{
+    font-size: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #FFF;
+}
+.info-mv{
+    width: 168px;
+    flex-grow: 1;
+}
+.weekly-item-mv .song-title-mv{
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    height: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.weekly-item-mv .singer-mv{
+    font-size: 12px;
+    color: #888;
+    text-transform: capitalize;
+    height: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.weekly-item-mv .view-count-mv{
+    font-size: 13px;
+    color: #888;
+    padding: 5px 0px;
+}
+.weekly-item-mv .image-mv{
+  width: 110px;
+  height: 62px;
+  background-image: url(https://picsum.photos/110/62/?random);
+  margin-right: 15px;
+  position: relative;
+}
+.right-side .weekly-item-mv-last{
+    margin-bottom: 30px;
+}

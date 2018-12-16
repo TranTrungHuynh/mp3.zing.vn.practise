@@ -1,0 +1,78 @@
+.back-header{
+    background-color: #1c1c1c;
+}
+
+.header img{
+    margin-right: 50px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #1c1c1c;
+}
+
+.header .search {
+    position: relative;
+    
+}
+.header .search input{
+    padding: 5px 15px;
+    border-radius: 10px;
+    outline: none;
+}
+.header .search .search-icon{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 7px 5px;
+}
+
+.header .navheader{
+    list-style: none;
+    margin: 0;
+}
+.header .navheader li{
+    float: left;
+}
+
+.header .navheader li.active a{
+    background-color: black;
+    color: #a845de;
+}
+.header .navheader li a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 15px;
+    background-color: #1c1c1c;
+    text-align: center;
+    color: white;
+}
+.header .navheader li a:hover{
+    background-color: black;
+    color: #a845de;
+}
+
+.header .avatar{
+    position: absolute;
+    right: 0;
+    color: #FFF;
+    line-height: 23px;
+    vertical-align: center;
+}
+.header .avatar .fakeavatar {
+    height: 23px;
+    width: 23px;
+    background-image: url(https://scontent.fhan1-1.fna.fbcdn.net/v/t1.0-9/45711736_1253270264822265_1123659626131226624_n.jpg?_nc_cat=107&_nc_ht=scontent.fhan1-1.fna&oh=0f8f6aa55a6960257c2449add2b674fc&oe=5C974DCB);
+    background-position: center;
+    background-size: cover;
+    float: left;
+    border-radius: 50%;
+}
+.header .avatar .profile {
+    font-size: 14px;
+    float: left;
+    padding: 0 5px;
+}
+
